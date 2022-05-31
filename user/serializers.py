@@ -1,6 +1,7 @@
 from rest_framework import serializers
+
 from user.models import User
-from user.utils import hunter_verify, clearbit_info
+from user.utils import clearbit_info, hunter_verify
 
 
 class CreateAccountSerializer(serializers.ModelSerializer):

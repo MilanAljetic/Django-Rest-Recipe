@@ -1,7 +1,7 @@
+import clearbit
 import requests
 from django.conf import settings
-from rest_framework import status, serializers
-import clearbit
+from rest_framework import serializers, status
 
 
 def hunter_verify(email):

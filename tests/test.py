@@ -1,10 +1,12 @@
-from rest_framework.test import APITestCase
-from user.models import User
-from recipe.models import Ingredient, Recipe, Rate
-from django.urls import reverse
 import json
-from django.contrib.auth.hashers import make_password
+
+from django.urls import reverse
 from faker import Faker
+from rest_framework.test import APITestCase
+
+from recipe.models import Ingredient, Recipe
+from user.models import User
+
 fake = Faker()
 
 

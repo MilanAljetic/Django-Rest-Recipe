@@ -1,7 +1,7 @@
-from django.contrib import admin
 from django.urls import path
-from .views import AllRecipesView, CreateRecipesView, IngredientsView, RateView, OwnRecipesView
 
+from .views import (AllRecipesView, CreateRecipesView, IngredientsView,
+                    OwnRecipesView, RateView)
 
 urlpatterns = [
     path("ingredients/", IngredientsView.as_view(), name="ingredients"),

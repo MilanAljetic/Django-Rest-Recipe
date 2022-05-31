@@ -1,6 +1,7 @@
 from django.db import models
-from user.models import User
 from django.db.models import Avg
+
+from user.models import User
 
 
 class Ingredient(models.Model):

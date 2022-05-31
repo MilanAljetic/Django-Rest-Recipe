@@ -1,7 +1,8 @@
 from rest_framework import generics, mixins
 from rest_framework.permissions import IsAuthenticated
+
 from user.models import User
-from user.serializers import CreateAccountSerializer, AccountSerializer
+from user.serializers import AccountSerializer, CreateAccountSerializer
 
 
 class RegisterUserView(generics.GenericAPIView, mixins.CreateModelMixin):
